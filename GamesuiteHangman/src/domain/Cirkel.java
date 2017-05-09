@@ -15,7 +15,7 @@ public class Cirkel extends Vorm {
     }
 
     public void setMiddelPunt(Punt middelPunt) {
-        if (middelPunt == null) throw new DomainException("Middelpunt mag niet null zijn");
+        if (middelPunt == null) throw new IllegalArgumentException("Middelpunt mag niet null zijn");
 
         this.middelPunt = middelPunt;
     }
@@ -25,7 +25,7 @@ public class Cirkel extends Vorm {
     }
 
     public void setRadius(int radius) {
-        if (radius < 0) throw new DomainException("Radius mag niet kleiner dan 0 zijn");
+        if (radius <= 0) throw new IllegalArgumentException("Radius mag niet kleiner dan 0 zijn");
 
         this.radius = radius;
     }

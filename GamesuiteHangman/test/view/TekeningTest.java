@@ -1,4 +1,4 @@
-package domain;
+package view;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -6,6 +6,11 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import domain.Cirkel;
+import domain.Driehoek;
+import domain.Punt;
+import domain.Vorm;
 
 public class TekeningTest {
 	private Vorm gebouw;

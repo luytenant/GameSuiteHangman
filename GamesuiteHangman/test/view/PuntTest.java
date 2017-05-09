@@ -1,9 +1,11 @@
-package domain;
+package view;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import domain.Punt;
 
 public class PuntTest {
 	

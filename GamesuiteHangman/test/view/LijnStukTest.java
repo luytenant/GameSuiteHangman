@@ -1,10 +1,13 @@
-package domain;
+package view;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import domain.DomainException;
+import domain.Punt;
 
 public class LijnStukTest {
 	private Punt punt1 = new Punt(10, 20);

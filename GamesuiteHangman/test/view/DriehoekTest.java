@@ -1,8 +1,12 @@
-package domain;
+package view;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import domain.DomainException;
+import domain.Driehoek;
+import domain.Punt;
 
 public class DriehoekTest {
 	private Punt punt1 = new Punt(10, 20);
