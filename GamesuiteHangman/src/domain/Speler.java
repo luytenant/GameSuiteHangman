@@ -46,13 +46,15 @@ public class Speler {
 		boolean result = false;
 		if (object instanceof Speler) {
 			Speler p = (Speler) object;
-			if(this.getNaam().equals(p.getNaam()) && (this.getScore() == p.getScore())){
+			if (this.getNaam().equals(p.getNaam()) && (this.getScore() == p.getScore())) {
 				result = true;
 			}
 		}
-
 		return result;
+	}
 
+	public String ToString() {
+		return this.getNaam() + " heeft als score: " + this.getScore();
 	}
 
 }
