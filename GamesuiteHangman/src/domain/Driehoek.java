@@ -1,12 +1,7 @@
-package domain.model;
-
-import domain.exceptions.DomainException;
+package domain;
 
 import java.awt.*;
 
-/**
- * Created by tiebe on 9/05/2017.
- */
 public class Driehoek extends Vorm {
     private Punt hoekpunt1, hoekpunt2, hoekpunt3;
 
