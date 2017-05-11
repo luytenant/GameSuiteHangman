@@ -25,12 +25,15 @@ public class Punt {
 		this.y = y;
 	}
 
-	public boolean equals(){
-		if(x == y){
-			return true;
-		}else{
-			return false;
-		}	
+	public boolean equals(Object object) {
+		boolean result = false;
+		if (object instanceof Punt) {
+			Punt p = (Punt) object;
+			if (p.getX() == this.getX() && p.getY() == this.getY()) {
+				result = true;
+			}
+		}
+		return result;
 	}
 	
 	public String toString(){
